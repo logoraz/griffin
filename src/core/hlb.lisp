@@ -1,13 +1,15 @@
-(defpackage :hlbcalc
-  (:use :cl)
+(defpackage #:core/hlb
+  (:use #:cl)
   (:export #:calculate-hlb
            #:hlb->type
            #:surfactant-type
            #:*surfactant-db*
            #:surfactant-type
            #:calculate-blend-hlb
-           #:print-hlb-result))
-(in-package :hlbcalc)
+           #:print-hlb-result)
+  (:documentation "HLB Calculator Logic."))
+
+(in-package #:core/hlb)
 
 
 ;;; =============================================================================

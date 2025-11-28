@@ -1,20 +1,23 @@
-# HLBCalc
+# Griffin
 
-**Hydrophilic-Lipophilic Balance Calculator**
+**Hydrophilic-Lipophilic Balance/Deviation Calculator**
 
-A **fast, accurate, and extensible** HBL calculator written in **Common Lisp**.
+A **fast, accurate, and extensible** HLB/HLD calculator written in **Common Lisp**.
+
+<p align="center">
+  <img src="assets/common-lisp.svg" width="200" />
+</p>
 
 ---
 
-## Features
+## Goals
 
-- Calculate HLB from hydrophilic/lipophilic mass fractions  
-- Classify surfactants by HLB range (W/O, O/W, solubilizer, etc.)  
-- Compute **blended HLB** for surfactant mixtures  
-- Built-in surfactant database (`:tween-80`, `:span-80`, etc.)  
-- Clean, modern CL code
-- Unit tests with **FiveAM**  
-- ASDF + ocicl ready
+- [ ] Implement HLB & HLD calculation backend
+- [ ] Implement database for surfactants & oils 
+- [ ] Build unit test framework
+- [ ] Build documentation system
+- [ ] Build ADW/GTK4 UI
+- [ ] Create executable
 
 ---
 
@@ -22,19 +25,23 @@ A **fast, accurate, and extensible** HBL calculator written in **Common Lisp**.
 
 ```bash
   # Clone the repo
-  $ git clone https://github.com/logoraz/hlbcalc.git
-  $ cd hlbcalc
-  # Load in your Lisp REPL (SBCL, CCL, etc.)
+  $ git clone https://github.com/logoraz/griffin.git
+  $ cd griffin
+  # Load in your Lisp REPL (SBCL only for now)
   $ sbcl
 ```
 
 ```lisp
   ;; Load system
-  (asdf:load-system :hlbcalc)
+  (asdf:load-system :griffin)
 
   ;; Test system
-  (asdf:test-system :hlbcalc)
+  (asdf:test-system :griffin)
 
 ```
 
+## References
 
+- [ ] TBD
+- [ ] TBD
+- [ ] TBD

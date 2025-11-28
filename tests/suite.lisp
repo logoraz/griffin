@@ -1,15 +1,17 @@
 (defpackage #:tests/suite
   (:nicknames #:suite)
-  (:use :cl :5am)
-  (:import-from :hlbcalc
+  (:use #:cl #:5am)
+  (:import-from #:core/hlb
                 #:calculate-hlb
                 #:hlb->type
                 #:calculate-blend-hlb
-                #:*surfactant-db*))
+                #:*surfactant-db*)
+  (:documentation "Main test suite."))
+
 (in-package #:tests/suite)
 
 ;; Define the test suite
-(def-suite :suite :description "HLBITZ test suite")
+(def-suite :suite :description "HLB test suite")
 (in-suite :suite)
 
 ;; =====================================================================
